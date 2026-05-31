@@ -1,20 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 :root {
@@ -33,18 +21,6 @@ ul {
   width: 100%;
   padding: 0 var(--pad);
   position: relative;
-  height: 60px;
-}
-
-.header-container {
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 8px 16px; /* виправлено */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .logo img {
@@ -55,6 +31,9 @@ ul {
 
 .nav-menu {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-item:not(:last-child) {
@@ -96,11 +75,6 @@ ul {
 }
 
 @media (max-width: 1200px) {
-  .header__wrap {
-    width: calc(100% - (var(--pad) * 2));
-    max-width: 100%;
-  }
-
   .nav-item:not(:last-child) {
     margin-right: 20px;
   }
